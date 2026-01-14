@@ -1,17 +1,23 @@
 
 # ATLAS: Infraestrutura para Autonomia e Crise
 
-O ATLAS é um sistema de suporte à vida digital projetado para resiliência extrema.
+O ATLAS não é apenas um mensageiro; é um sistema de suporte à vida digital em cenários de colapso de infraestrutura, repressão política ou desastres naturais.
 
-## Protocolo de SOS (V2 - Strict Enforcement)
+## Pilares de Resiliência
 
-Diferente de sistemas convencionais, o sinal de SOS no ATLAS segue uma lógica de "Vigilância de Rede":
+### 1. Comunicação em Desastres
+- **SOS Broadcast:** Protocolo de inundação prioritária que ignora restrições de pareamento para alertar todos os nós próximos (1-5km via Bluetooth/LoRa).
+- **Consumo de Energia Zero-Idle:** Otimizado para funcionar em dispositivos com bateria crítica.
 
-1. **Ativação Irrevogável:** Uma vez ativado pelo nó em perigo, o usuário local não pode cancelar o sinal. Isso previne que agressores forcem a vítima a desligar o pedido de socorro.
-2. **Confirmação Externa:** O sinal só é marcado como 'RESOLVED' quando um nó receptor próximo atua fisicamente no local e confirma a segurança da vítima via protocolo de proximidade.
-3. **Escalonamento por Inatividade (10min):** Se nenhum nó receptor confirmar a resolução em 10 minutos, o sistema assume que os nós próximos estão comprometidos ou incapazes. O sinal é automaticamente amplificado para todas as frequências disponíveis (LoRa, Mesh Distante, Bluetooth LE), ignorando filtros de privacidade para garantir a sobrevivência.
+### 2. Resistência Política (Stealth Mode)
+- **Grayscale UI:** Reduz visibilidade de longe em situações de baixa luminosidade.
+- **Camuflagem de Chaves:** Implementação de autodestruição de metadados de conversas após 24h sem contato com o nó de origem.
+- **Assinatura Deniável:** O protocolo permite negar a autoria de mensagens em cenários de coerção física.
 
-## Pilares
-- **Resiliência:** Malha P2P sem dependência de internet.
-- **Segurança:** Criptografia de ponta a ponta com identidades soberanas.
-- **Educação:** Biblioteca offline replicada via Gossip.
+### 3. Educação e Comunidades Offline
+- **Shared Knowledge Base:** Mini-Wiki replicada via Gossip Protocol. Cada nó que "lê" um artigo ajuda a distribuí-lo para outros, criando uma biblioteca física móvel.
+- **Local Governance:** Ferramentas para votação local via malha mesh para organização de abrigos ou suprimentos.
+
+## Modelo de Ameaça (Atualizado)
+- **Adversário:** Governos autoritários, forças de ocupação, interrupções totais de rede elétrica.
+- **Proteção:** Isolamento total de IPs, anonimato criptográfico, resistência a ataques de Sybil via prova de trabalho leve na criação de IDs.

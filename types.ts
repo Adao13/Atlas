@@ -37,8 +37,6 @@ export interface ATLASMessage {
   timestamp: number;
   hopCount: number;
   referencedMessageId?: string;
-  location?: { lat: number; lng: number };
-  emergencyStatus?: 'PENDING' | 'RESOLVED';
 }
 
 export interface KnowledgeArticle {
@@ -66,6 +64,4 @@ export interface DecryptedMessage {
   isMe: boolean;
   isRead?: boolean;
   type: ATLASMessageType;
-  location?: { lat: number; lng: number };
-  emergencyStatus?: 'PENDING' | 'RESOLVED';
 }
