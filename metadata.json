@@ -1,0 +1,8 @@
+{
+  "name": "ATLAS - Mesh Decentralized Infrastructure",
+  "description": "A self-sovereign, peer-to-peer communication system. Features cryptographic identity, end-to-end encryption, and simulated decentralized mesh networking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
